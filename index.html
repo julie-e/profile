@@ -1,83 +1,104 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Basic infos</title>
+    <title>Basic info</title>
 
     <!-- Google fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" rel="stylesheet">
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Your style -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card text-center">
-        <img height= 100px width= 100px class="img-circle" src="images/julie_new.jpg" alt="Julie">
-        <h1>Julie Ehrmann</h1>
-        <h2>Full-stack Developer @Le Wagon</h2>
-        <p class="description">
-          Student at ESCP Europe currently taking a second gap year to learn to code @Le Wagon and travel the World.
-        </p>
-
-        <a class="btn-red" href="">See for yourself</a>
-      </div>
-
-      <div class="card text-center">
-        <ul class="card-list list-inline">
-          <li>
-            <a href="www.facebook.com" target= "_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-            <br>Facebook</a>
-          </li>
-          <li>
-            <a href="www.linkedin.com" target= "_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            <br>Linkedin</a>
-          </li>
-          <li>
-            <a href="www.twitter.com" target= "_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
-            <br>Twitter</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="card text-center">
-        <h2>My Favourite Sports</h2>
-        <ul class="card-list">
+    <div id="sidebar">
+      <ul>
         <li>
-          <img height= 200px src="images/hockey.jpg" alt="Hockey">
-          <h3>HOCKEY</h3>
-          <p>Rather unknown Olympic sport which I have played for 10 years</p>
+          <a href="#summary">
+            <i class="fa fa-info-circle"></i>
+          </a>
         </li>
         <li>
-          <img height= 190px src="images/rugby.jpg" alt="Rugby">
-          <h3>RUGBY</h3>
-          <p>Rather unusual sport to play for a girl but amazing spirit</p>
+          <a href="#favorite-sports">
+            <i class="fa fa-snowflake-o"></i>
+          </a>
         </li>
         <li>
-          <img height= 200px src="images/ski.jpg" alt="Ski">
-          <h3>SKI</h3>
-          <p>I've been skiing since I was born, did some competition and still love it</p>
+          <a href="#footer">
+            <i class="fa fa-life-ring"></i>
+          </a>
         </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
+    <div id="page-content">
+      <!-- your page content here -->
+      <div class="container">
+        <div class="card text-center" id="summary">
+          <img height= 100px width= 100px class="img-circle" src="../images/julie_new.jpg" alt="Julie">
+          <h1>Julie Ehrmann</h1>
+          <h2>Full-stack Developer @Le Wagon</h2>
+          <p class="description">
+            Student at ESCP Europe currently taking a second gap year to learn to code @Le Wagon and travel the World.
+          </p>
 
-      <div class="card text-center">
-        <ul class="card-list list-inline">
+          <a class="btn-red" href="http://www.routard.com/" target="_blank">Visit the World</a>
+        </div>
+
+        <div class="card text-center">
+          <ul class="card-list list-inline">
+            <li>
+              <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+              <br>Facebook</a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <br>Linkedin</a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+              <br>Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card text-center" id="favorite-sports">
+          <h2>My Favourite Sports</h2>
+          <ul class="card-list">
           <li>
-            <a href="#" target= "_blank"><i class="fa fa-heart" aria-hidden="true"></i></a>
+            <img height= 200px src="../images/hockey.jpg" alt="Hockey">
+            <h3>HOCKEY</h3>
+            <p>Rather unknown Olympic sport which I have played for 10 years</p>
           </li>
           <li>
-            <a href="#" target= "_blank"><i class="fa fa-share" aria-hidden="true"></i></a>
+            <img height= 190px src="../images/rugby.jpg" alt="Rugby">
+            <h3>RUGBY</h3>
+            <p>Rather unusual sport to play for a girl but amazing spirit</p>
           </li>
           <li>
-            <a href="#" target= "_blank"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+            <img height= 200px src="../images/ski.jpg" alt="Ski">
+            <h3>SKI</h3>
+            <p>I've been skiing since I was born, did some competition and still love it</p>
           </li>
-        </ul>
-      </div>
+          </ul>
+        </div>
+
+        <div class="card text-center" id="footer">
+          <h2>About this page</h2>
+          <ul class="card-list list-inline">
+            <li>
+              <a href="#" target= "_blank"><i class="fa fa-heart" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#" target= "_blank"><i class="fa fa-share" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#" target= "_blank"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+    </div>
     </div>
   </body>
 </html>

@@ -5,7 +5,7 @@ body {
 }
 
 h1, a:hover {
-  color: #333333;
+  color: #DD5555;
 }
 
 h2, h3 {
@@ -51,16 +51,17 @@ a {
 }
 
 .btn-red {
-  background-color: #C7221B;
+  background-color: #DD5555;
   border-radius: 4px;
   padding: 8px 10px 8px 10px;
   color: white;
+  transition: all 1s;
 }
 
 .btn-red:hover {
   background-color: white;
-  color: #C7221B;
-  border: 1px solid #C7221B;
+  color: #DD5555;
+  border: 1px solid #DD5555;
 }
 
 .list-inline > li {
@@ -84,4 +85,31 @@ h3 {
 
 .card-list img {
   padding-top: 30px;
+}
+
+#sidebar {
+  position: fixed;
+  width: 100px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #384047;
+}
+
+#sidebar li {
+  list-style: none;
+}
+
+#sidebar i {
+  color: #888888;
+  font-size: 20px;
+  padding: 20px 0px 20px 0px;
+}
+
+#sidebar i:hover {
+  color: white;
+}
+
+#page-content {
+  margin-left: 100px;
 }
