@@ -87,6 +87,16 @@ h3 {
   padding-top: 30px;
 }
 
+.image {
+  padding-right: 20px;
+}
+
+.sports-description {
+  margin-top: auto;
+  padding-top: 20px;
+  margin-bottom: auto;
+}
+
 #sidebar {
   position: fixed;
   width: 100px;
